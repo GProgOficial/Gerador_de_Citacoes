@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #f4f1e1;
+    color: #4b3e2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.contanier {
+    width: 400px;
+    background: #fff8dc;
+    border: 1px solid #e0d2a6;
+    padding: 20px 30px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.contanier::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px dashed #d4c4a2;
+    pointer-events: none;
+}
+
+h1 {
+    font-family: "Great Vibes", cursive;
+    font-weight: 300px;
+    font-size: 32px;
+    color: #5a4b34;
+    margin-bottom: 20px;
+}
+
+.quote-box {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #d4c4a2;
+    border-radius: 5px;
+    font-style: italic;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1);
+    min-height: 100px;
+}
+
+#quote {
+    font-size: 18px;
+    color: #4b3e2f;
+    line-height: 28px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+button {
+    background: #e0d2a6;
+    color: #4b3e2f;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #d4c4a2;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #d4c4a2;
+    transform: scale(1.05);
+}
